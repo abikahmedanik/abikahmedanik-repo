@@ -45,10 +45,99 @@ a{
 
     color: rgb(41, 230, 8);
 }
-.home {
+.Home{
     display: flex;
     align-items: center;
     height: 100vh;
     padding: 60px 9% 0;
     color: aliceblue;
+} 
+.home-info h1 {
+    font-size: 55px;
+}
+.home-info h2{
+    font-size: 30px;
+    margin-top: -10px;
+
+}
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(8, 174, 39);
+    border: 2px solid rgb(21, 160, 52);
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+} 
+.btn:hover{
+    background: transparent;
+    color: chartreuse;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci {
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #16b40a;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #16b40a;
+    margin: 0 8px;
+    transition: .5s;
+} .home-info .btn-sci .sci a:hover {
+    background: transparent;
+    color: #3509d4;
+    box-shadow: 0 0 10px #11e102;
+}
+.home-img .img-box {
+    width: 25vw;
+    height: 25vw;
+    background: rgb(30, 5, 5);
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent, transparent, #18fc08);
+    overflow: hidden;
+}
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #04020a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img {
+    position: absolute;
+    display: block;
+    top: 30px;
+    width: 120%;
+    object-fit: cover;
 }
